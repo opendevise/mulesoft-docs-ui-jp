@@ -65,6 +65,5 @@
     // prevent clicks on nav from closing
     root.addEventListener('click', clickThru)
     root.addEventListener('touchend', clickThru)
-
   })
 })()
