@@ -47,7 +47,7 @@
     &::before {
       background-image: url(../img/icons/caution.svg);
       color: color-mod(var(--red-3) lightness(40%));
-      content: '注意';
+      content: 'CAUTION';
     }
   }
 
@@ -58,18 +58,18 @@
     &::before {
       background-image: url(../img/icons/important.svg);
       color: color-mod(var(--yellow-3) lightness(40%));
-      content: '重要';
+      content: 'IMPORTANT';
     }
   }
 
   &.note tbody::before {
     background-image: url(../img/icons/note.svg);
-    content: 'メモ';
+    content: 'NOTE';
   }
 
   &.tip tbody::before {
     background-image: url(../img/icons/tip.svg);
-    content: 'ヒント';
+    content: 'TIP';
   }
 
   &.warning tbody {
@@ -79,7 +79,24 @@
     &::before {
       background-image: url(../img/icons/caution.svg);
       color: color-mod(var(--red-3) lightness(40%));
-      content: '警告';
+      content: 'WARNING';
     }
+  }
+}
+body[lang=jp] .admonitionblock {
+  &.caution tbody::before {
+    content: '注意';
+  }
+  &.important tbody::before {
+    content: '重要';
+  }
+  &.note tbody::before {
+    content: 'メモ';
+  }
+  &.tip tbody::before {
+    content: 'ヒント';
+  }
+  &.warning tbody::before {
+    content: '警告';
   }
 }

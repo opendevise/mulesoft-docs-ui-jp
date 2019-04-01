@@ -213,3 +213,5 @@ page:
   - content: *page_title
     url: *page_url
   navigation: []
+  origin:
+    url: git@github.com:mulesoft/docs-visualizer-jp
